@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import defaultImg from '../../../assets/user.png'
 
 const Navbar = () => {
@@ -25,8 +25,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end flex items-center gap-5">
-                <img src={defaultImg} className="w-[45px] cursor-pointer"/>
-                <button className="bg-[#403F3F] px-6 py-2 cursor-pointer font-semibold text-xl text-white">Login</button>
+                <img src={defaultImg} className="w-[45px] cursor-pointer" />
+                <Link to='/login'>
+                    <button className="bg-[#403F3F] px-6 py-2 cursor-pointer font-semibold text-xl text-white">Login</button>
+                </Link>
             </div>
         </div>
     );

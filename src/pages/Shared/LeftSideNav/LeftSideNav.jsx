@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import News from "./News";
+import Newses from "./Newses";
 
 const LeftSideNav = () => {
     const [categories, setCategories] = useState([])
@@ -20,7 +20,7 @@ const LeftSideNav = () => {
                 }
             </div>
             <div>
-                <News></News>
+                <Newses></Newses>
             </div>
         </div>
     );
